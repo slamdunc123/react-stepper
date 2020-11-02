@@ -97,7 +97,7 @@ const NewStepper = () => {
 								id={`${step.name}-part-trigger`}
 							>
 								<span className='bs-stepper-circle'>
-									{step.id}
+									{activeStep > step.id ? '\u2713' : step.id}
 								</span>
 								<span className='bs-stepper-label'>
 									{step.name}
